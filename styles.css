@@ -75,15 +75,27 @@ body {
     overflow: hidden;
 }
 
+.btn:active { transform: scale(0.94); }
+
 .btn__digit {
     background-color: #575758;
     color: white;
 }
 
+.btn__digit:hover {
+    background-color: #656567;
+}
+
+
 .btn__operator {
     background-color: #ff9502;
     color: white;
 }
+
+.btn__operator:hover {
+    background-color: #e68600;
+}
+
 
 .btn__wide {
     flex: 2;
@@ -92,4 +104,8 @@ body {
 .btn__deletion {
     background-color: #767677;
     color: white;
+}
+
+.btn__deletion:hover {
+    background-color: #666666;
 }
