@@ -1,0 +1,95 @@
+*, *::before, *::after{ box-sizing: border-box; margin: 0; padding: 0}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c333a;
+}
+
+
+#calculator {
+    background-color: #282828;
+    
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: 
+        0 40px 80px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px 22px 18px;
+    min-height: 120px;
+    gap: 6px;
+    border-bottom: 1px solid #282828;
+}
+
+.display__expression {
+    font-size: 13px;
+    font-weight: 300;
+    color: #c7c7c7;
+    min-height: 18px;
+    letter-spacing: 0.02em;
+}
+
+.display__value {
+    font-size: 42px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+
+}
+
+
+/* Button Grid */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.buttons__row {
+    display: flex;
+    gap: 1px;
+}
+
+.btn {
+    flex: 1;
+    height: 72px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.btn__digit {
+    background-color: #575758;
+    color: white;
+}
+
+.btn__operator {
+    background-color: #ff9502;
+    color: white;
+}
+
+.btn__wide {
+    flex: 2;
+}
+
+.btn__deletion {
+    background-color: #767677;
+    color: white;
+}
