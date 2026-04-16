@@ -8,8 +8,52 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <div id="container">
+        <div id="calculator">
+            <div class="display">
+                <div class="display__expression" id="expression">5+5</div>
+                <div class="display__value" id="value">10</div>
+            </div>
 
+            <div class="buttons">
+                <!-- row 1 -->
+                 <div class="buttons__row">
+                    <button class="btn btn__wide btn__deletion">AC</button>
+                    <button class="btn btn__deletion">⌫</button>
+                    <button class="btn btn__operator">÷</button>
+                 </div>
+
+                <!-- row 2 -->
+                 <div class="buttons__row">
+                    <button class="btn btn__digit">7</button>
+                    <button class="btn btn__digit">8</button>
+                    <button class="btn btn__digit">9</button>
+                    <button class="btn btn__operator">x</button>
+                 </div>
+
+                 <!-- row 3 -->
+                  
+                 <div class="buttons__row">
+                    <button class="btn btn__digit">4</button>
+                    <button class="btn btn__digit">5</button>
+                    <button class="btn btn__digit">6</button>
+                    <button class="btn btn__operator">-</button>
+                  </div>
+
+                <!-- row 4 -->
+                 <div class="buttons__row">
+                    <button class="btn btn__digit">1</button>
+                    <button class="btn btn__digit">2</button>
+                    <button class="btn btn__digit">3</button>
+                    <button class="btn btn__operator">+</button>
+                 </div>
+
+                 <!-- row 5 -->
+                 <div class="buttons__row">
+                    <button class="btn btn__digit btn__wide">0</button>
+                    <button class="btn btn__digit">.</button>
+                    <button class="btn btn__operator">=</button>
+                 </div>
+            </div>
         </div>
     </body>
 </html>
