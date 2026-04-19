@@ -49,6 +49,9 @@ body {
 
 }
 
+.display__value.small {font-size: 28px;}
+.display__value.error { color: #e24b4a; font-size: 18px;}
+
 
 /* Button Grid */
 .buttons {
@@ -77,6 +80,7 @@ body {
 
 .btn:active { transform: scale(0.94); }
 
+/* Digit buttons */
 .btn__digit {
     background-color: #575758;
     color: white;
@@ -86,7 +90,7 @@ body {
     background-color: #656567;
 }
 
-
+/* Operator buttons */
 .btn__operator {
     background-color: #ff9502;
     color: white;
@@ -96,11 +100,12 @@ body {
     background-color: #e68600;
 }
 
-
+/* Wide buttons */
 .btn__wide {
     flex: 2;
 }
 
+/* AC & backspace buttons*/
 .btn__deletion {
     background-color: #767677;
     color: white;
@@ -108,4 +113,17 @@ body {
 
 .btn__deletion:hover {
     background-color: #666666;
+}
+
+/* Disabled decimal */
+.btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.btn:disabled:active { transform: none; }
+
+/* keyboard highlight */
+.btn.kbd-active {
+    filter: brightness(1.4);
 }
